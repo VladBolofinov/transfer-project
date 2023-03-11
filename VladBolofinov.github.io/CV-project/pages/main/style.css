@@ -1,0 +1,135 @@
+:root {
+    --main-color: #fae207;
+  }
+
+body {
+    background: url('../../assets/img/bg/background-img.jpg') center center/cover no-repeat;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: var(--main-color);
+    border-radius: 1%;
+    padding: 25px 10px;   
+}
+
+header .container .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+header .container .wrapper .wrapper-img {
+    width: 48px;
+    height: 48px;
+}
+
+.middle-data .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color:var(--main-color);
+    border-radius: 1%;
+    padding: 25px 10px;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid 3px;
+    border-color: blueviolet;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+  .avatar:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); 
+  }
+
+.info-about {
+    margin-top: 15px;
+}
+
+.education {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.about-me {
+    padding: 10px 50px;
+}
+
+h2:hover {
+    color: #FF5733;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    transition: all .3s;
+    color: #f9804b;
+}
+
+a:visited {
+    color:black;
+    text-decoration: none;
+}
+
+.img-icon {
+    transition: 1s; 
+}
+
+.img-icon:hover {
+    transform: scale(1.2);
+}
+
+footer .container {
+    padding: 25px 0px;
+    text-align: center;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 568px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    
+    .info-about {
+        font-size: 12px;
+    }
+    
+    .avatar {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .about-me {
+        padding: 0px 10px;
+    }
+    
+    .education {
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .education-time {
+        font-size: 14px;
+    }
+    
+    .hobbies-info {
+        font-size: 14px;
+        text-align: center;
+    }
+}
